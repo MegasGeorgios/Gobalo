@@ -1,4 +1,5 @@
-#Prueba para perfil PHP Angular
+Prueba para perfil PHP Angular
+===========
 
 La prueba consiste en realizar un pequeño microsite de gestión de recursos con programación OO PHP ( PHP orientado a objetos ).
 
@@ -9,13 +10,13 @@ Libertad a la hora del tipo de dato a utilizar.
 
 Esta será la estructura del proyecto:
 
-##1. Home
+###1. Home
 
 > Template sencilla en HTML. Aquí se deben renderizar los recursos desde la base de datos, mostrando el nombre, descripción e imagen de cada recurso.
 > Los recursos deben estar paginados por AngularJS. ( Se puede establecer la paginación en dos recursos para evitar crear muchos registros )
 
 
-##2. Contacto
+###2. Contacto
 
 > Se accederá a través de un link en la home. Formulario para añadir recursos a la web. Tendrá los siguientes campos: Nombre, descripción e imagen.
 > El formulario debe comunicarse con una API (respuesta JSON) que deberá crear. Esa API ( en este caso fichero simple de funcionalidad PHP ) debe enviar un email a desarrollo@gobalo.es con los campos del formulario y 'Prueba backender PHP góbalo' como asunto. También guardará el recurso en la base de datos y ha de ser mostrado en la home.

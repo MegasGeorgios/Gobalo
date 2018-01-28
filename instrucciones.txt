@@ -1,0 +1,51 @@
+TEST GOBALO:
+
+TECNOLOGIAS UTILIZADAS:
+-Laravel 5.5
+-VueJS
+-MySQL
+
+REQUISITOS:
+-Conexion a internet.
+-Laravel 5.5 (https://laravel.com/docs/5.5/installation)
+
+DUMP BD:
+-El dump de la base de datos se encuentra en la carpeta raiz "/angular_php_test"
+el archivo de nombre "test_backend_php.sql"
+
+EMAILS:
+Para el envio de correos electronicos he utilizado Mailtrap, dejo una descripcion de la herramienta
+que la puedes encontrar en la documentacion oficial de laravel https://laravel.com/docs/5.5/mail casi
+al final de la pagina
+"Mailtrap
+Finalmente, puede usar un servicio como Mailtrap y el smtp controlador para enviar sus mensajes
+de correo electrónico a un buzón "ficticio" donde puede verlos en un verdadero cliente de correo
+electrónico. Este enfoque tiene el beneficio de permitirle
+inspeccionar realmente los correos electrónicos finales en el visor de mensajes de Mailtrap."
+
+-Iniciar sesion en https://mailtrap.io/ con el correo test.gobalo@gmail.com y contraseña gobalo1234,
+puede ver los correos de prueba en el demo inbox.
+
+-Si desea utilizar otro servicio de correo electrónico, configure el archivo
+test-gobalo/config/mail.php con sus credenciales, ya la aplicacion en el controlador "RecursosControler"
+tiene por defecto enviar los correos a desarrollo@gobalo.es, por ahora ejecutando la
+aplicacion en el entorno local podra ver los correos desde el buzon de Mailtrap.
+
+EJECUTANDO LA APLICACION
+-Posicionarse en la carpeta /test-gobalo.
+
+-Ejecutar el comando "composer install" en la linea de comandos para instalar las dependencias.
+
+-Luego de tener creada la base de datos, en el archivo .env en la carpeta raiz,
+en las variables de entorno colocar su usuario y contraseña
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=test_backend_PHP
+DB_USERNAME=
+DB_PASSWORD=
+
+-Puede ejecutar el comando php artisan migrate para que laravel cree
+las tablas de la BD automaticamente, o hacer un import del archivo "test_backend_php.sql"
+
+-Poner en marcha la aplicacion con el comando "php artisan serve".
